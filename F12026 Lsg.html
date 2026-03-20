@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>F1 2026</title>
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="1styles.css">
 </head>
 
 <body>
@@ -22,7 +22,6 @@
 
 <main class="container">
 
-  <!-- REGLAS -->
   <section id="reglas">
     <div class="card big-card">
       <h2>Cambios principales</h2>
@@ -61,13 +60,11 @@
       </div>
     </div>
 
-    <!-- IMAGEN -->
     <div class="card big-card">
       <img src="f1_2026.jpg" alt="F1 2026">
     </div>
   </section>
 
-  <!-- EQUIPOS -->
   <section id="equipos" style="display:none;">
     <p>La parrilla de F1 2026 está formada por equipos históricos y nuevos participantes:</p>
 
@@ -92,7 +89,6 @@
   <p>Lucas Salán González</p>
 </footer>
 
-<!-- MODAL -->
 <div id="mensajeModal" class="modal">
   <div class="modal-content">
     <span class="close-btn" onclick="cerrarMensaje()">&times;</span>
@@ -115,7 +111,7 @@ function cerrarMensaje() {
   document.getElementById('mensajeModal').style.display = 'none';
 }
 
-/* 🔥 ARREGLADO: cerrar al clicar fuera */
+
 window.addEventListener('click', function(event) {
   const modal = document.getElementById('mensajeModal');
   if (event.target === modal) {
