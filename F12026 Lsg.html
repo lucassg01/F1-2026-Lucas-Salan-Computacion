@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>F1 2026</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+  <h1>F1 2026</h1>
+  <p>Nueva reglamentación y equipos</p>
+</header>
+
+<nav>
+  <button onclick="mostrarSeccion('reglas')">Reglamentación</button>
+  <button onclick="mostrarSeccion('equipos')">Equipos</button>
+  <button onclick="mostrarMensaje()">¡Atención!</button>
+</nav>
+
+<main class="container">
+
+  <section id="reglas">
+    <div class="card big-card">
+      <h2>Cambios principales</h2>
+      <ul>
+        <li>La temporada F1 2026 trae novedades importantes que afectan coches y estrategias.</li>
+        <li>Coches más pequeños y ligeros.</li>
+        <li>Motores híbridos (50% eléctricos).</li>
+        <li>Combustible sostenible.</li>
+        <li>Desaparición del DRS.</li>
+      </ul>
+    </div>
+
+    <div class="grid">
+      <div class="card amarillo">
+        <h3>Coches</h3>
+        <ul>
+          <li>Más ágiles y ligeros.</li>
+          <li>Mejor manejo en curvas.</li>
+        </ul>
+      </div>
+
+      <div class="card verde">
+        <h3>Motores</h3>
+        <ul>
+          <li>Mayor potencia eléctrica.</li>
+          <li>Menor emisión de CO2.</li>
+        </ul>
+      </div>
+
+      <div class="card azul">
+        <h3>Aerodinámica</h3>
+        <ul>
+          <li>Alerones activos.</li>
+          <li>Más adelantamientos.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card big-card">
+      <img src="f1_2026.jpg" alt="F1 2026">
+    </div>
+  </section>
+
+  <section id="equipos" style="display:none;">
+    <p>La parrilla de F1 2026 está formada por equipos históricos y nuevos participantes:</p>
+
+    <div class="grid">
+      <div class="card"><img src="ferrari.jpg" alt="Ferrari"></div>
+      <div class="card"><img src="mercedes.jpg" alt="Mercedes"></div>
+      <div class="card"><img src="redbull.jpg" alt="Red Bull"></div>
+      <div class="card"><img src="mclaren.jpg" alt="McLaren"></div>
+      <div class="card"><img src="astonmartin.jpg" alt="Aston Martin"></div>
+      <div class="card"><img src="alpine.jpg" alt="Alpine"></div>
+      <div class="card"><img src="williams.jpg" alt="Williams"></div>
+      <div class="card"><img src="haas.jpg" alt="Haas"></div>
+      <div class="card"><img src="racingbulls.jpg" alt="Racing Bulls"></div>
+      <div class="card"><img src="audi.jpg" alt="Audi"></div>
+      <div class="card"><img src="cadillac.jpg" alt="Cadillac"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Lucas Salán González</p>
+</footer>
+
+<div id="mensajeModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="cerrarMensaje()">&times;</span>
+    <p>Si parpadean se lo van a perder, porque esto es la Fórmula 1 en estado puro.</p>
+  </div>
+</div>
+
+<script>
+function mostrarSeccion(seccion) {
+  document.getElementById('reglas').style.display = 'none';
+  document.getElementById('equipos').style.display = 'none';
+  document.getElementById(seccion).style.display = 'block';
+}
+
+function mostrarMensaje() {
+  document.getElementById('mensajeModal').style.display = 'block';
+}
+
+function cerrarMensaje() {
+  document.getElementById('mensajeModal').style.display = 'none';
+}
+
+window.addEventListener('click', function(event) {
+  const modal = document.getElementById('mensajeModal');
+  if (event.target === modal) {
+    modal.style.display = 'none';
+  }
+});
+</script>
+
+</body>
+</html>
