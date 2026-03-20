@@ -1,0 +1,136 @@
+/* ===== GENERAL ===== */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+/* HEADER */
+header {
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  border-bottom: 2px solid #444;
+}
+
+/* NAV */
+nav {
+  text-align: center;
+  margin: 20px 0;
+}
+
+nav button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff0000;
+  color: #fff;
+}
+
+nav button:hover {
+  background-color: #cc0000;
+}
+
+/* CONTENEDOR */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ===== GRID Y TARJETAS ===== */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: #111;
+  border: 2px solid #444;
+  border-radius: 10px;
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+/* 🔥 AQUÍ ESTÁ LA MEJORA IMPORTANTE */
+.big-card {
+  width: 100%;
+  max-width: 600px;
+  margin: 30px auto; /* separa bloques */
+}
+
+/* IMÁGENES */
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-top: 15px; /* separa del texto */
+}
+
+/* TEXTO */
+.card h2, .card h3, .card p, .card ul {
+  margin: 10px 0;
+}
+
+/* COLORES */
+.amarillo { background-color: #222200; }
+.verde { background-color: #002200; }
+.azul { background-color: #000022; }
+
+/* ===== MODAL (ARREGLADO) ===== */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999; /* 🔥 importante para que funcione */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+}
+
+.modal-content {
+  background-color: #111;
+  color: #fff;
+  border: 2px solid #ff0000;
+  width: 400px;
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* botón cerrar */
+.close-btn {
+  color: #aaa;
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: #fff;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  padding: 15px 0;
+  background-color: #111;
+  border-top: 2px solid #444;
+  margin-top: 40px;
+}
