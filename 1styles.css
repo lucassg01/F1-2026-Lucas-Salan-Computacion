@@ -1,4 +1,3 @@
-/* ===== GENERAL ===== */
 body {
   font-family: Arial, sans-serif;
   background-color: #000;
@@ -7,7 +6,6 @@ body {
   padding: 0;
 }
 
-/* HEADER */
 header {
   background-color: #111;
   color: #fff;
@@ -16,7 +14,6 @@ header {
   border-bottom: 2px solid #444;
 }
 
-/* NAV */
 nav {
   text-align: center;
   margin: 20px 0;
@@ -44,7 +41,6 @@ nav button:hover {
   margin: auto;
 }
 
-/* ===== GRID Y TARJETAS ===== */
 .grid {
   display: flex;
   flex-wrap: wrap;
@@ -65,37 +61,34 @@ nav button:hover {
   box-sizing: border-box;
 }
 
-/* 🔥 AQUÍ ESTÁ LA MEJORA IMPORTANTE */
+
 .big-card {
   width: 100%;
   max-width: 600px;
-  margin: 30px auto; /* separa bloques */
+  margin: 30px auto; 
 }
 
-/* IMÁGENES */
+
 .card img {
   width: 100%;
   height: auto;
   object-fit: cover;
   border-radius: 5px;
-  margin-top: 15px; /* separa del texto */
+  margin-top: 15px;
 }
 
-/* TEXTO */
 .card h2, .card h3, .card p, .card ul {
   margin: 10px 0;
 }
 
-/* COLORES */
 .amarillo { background-color: #222200; }
 .verde { background-color: #002200; }
 .azul { background-color: #000022; }
 
-/* ===== MODAL (ARREGLADO) ===== */
 .modal {
   display: none;
   position: fixed;
-  z-index: 999; /* 🔥 importante para que funcione */
+  z-index: 999; 
   left: 0;
   top: 0;
   width: 100%;
@@ -114,7 +107,6 @@ nav button:hover {
   text-align: center;
 }
 
-/* botón cerrar */
 .close-btn {
   color: #aaa;
   float: right;
@@ -126,7 +118,6 @@ nav button:hover {
   color: #fff;
 }
 
-/* ===== FOOTER ===== */
 footer {
   text-align: center;
   padding: 15px 0;
